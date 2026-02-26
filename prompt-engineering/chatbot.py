@@ -6,7 +6,7 @@ model = ChatOpenAI()
 
 while True:
     user_input=input('You :')
-    if user_input=="exit:":
+    if user_input=="exit":
         break
     response=model.invoke(user_input)
     print('Bot :',response.content)
